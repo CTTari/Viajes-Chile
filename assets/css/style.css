@@ -1,9 +1,20 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 .navbar{
     position: absolute;
     z-index: 10;
     width: 100%;
 }
-.carrusel{
-    position: absolute;
-    top: 0;
+#principal{
+    background-color: #000;
+    color: #fff;
+}
+hr{
+    background-color: #17A3B8;
+    height: 2px;
+}
+.fas{
+    background-color: #17A3B8;
+    text-align: center;
 }
