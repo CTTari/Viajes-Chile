@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" alt="logo-viajes" width="32px">
                 Viajes Chile</a>
@@ -44,6 +44,7 @@
             </div>
         </div>
     </nav>
+
     <div id="carouselExampleControls" class="carousel slide carrusel" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -65,8 +66,9 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
     <div class="container.fluid" id="principal">
-        <div class="container">
+        <div class="container d-none d-lg-block">
             <section class="quienes-somos">
                 <h1 class="titulo-principal text-center pt-5">¿Quiénes somos?</h1>
                 <hr class="my-5">
@@ -110,11 +112,12 @@
                 </div>
             </section>
         </div>
+
         <section class="container destacados">
             <h1 class="titulo-destacados text-center mt-5">Destacados</h1>
             <hr class="mt-5">
             <div class="row">
-                <div class="col-sm-12 col-md-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                     <div class="card" style="max-width: 18rem;">
                         <img src="assets/img/card1.jpg" class="card-img-top" alt="torres-paine" height="190px">
                         <div class="card-body">
@@ -124,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                     <div class="card" style="max-width: 18rem;">
                         <img src="assets/img/card2.jpg" class="card-img-top" alt="laguna-altiplano" height="190px">
                         <div class="card-body">
@@ -134,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                     <div class="card" style="max-width: 18rem;">
                         <img src="assets/img/card3.jpg" class="card-img-top" alt="flamenco-laguna" height="190px">
                         <div class="card-body">
@@ -144,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                     <div class="card" style="max-width: 18rem;">
                         <img src="assets/img/card4.jpg" class="card-img-top" alt="bosque-nativo" height="190px">
                         <div class="card-body">
@@ -154,19 +157,30 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <footer class="container.fluid text-white" id="footer">
+        <div class="container">
+            <div class="row text-center row-footer">
+                <div class="col-sm-12 col-md-6">
+                    <h2 class="viajes-footer">VIAJES CHILE</h2>
+                </div>
+                <div class=" col-sm-12 col-md-6 iconos">
+                    <a href="https://github.com"><i class="fab fa-github-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-2x"></i></a>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

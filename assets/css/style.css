@@ -2,25 +2,38 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #000;
 }
-.navbar{
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-}
+
 #principal{
     background-color: #000;
     color: #fff;
 }
+
+.navbar-brand{
+    vertical-align: middle;
+}
+
 hr{
     background-color: #17A3B8;
     height: 2px;
 }
+
 .fas{
     display: block;
     background-color: #17A3B8;
     text-align: center;
     padding: 3px;
 }
+
 .card-body{
     background-color: #17A3B8;
+}
+
+#footer{
+    background-color: #17A3B8;
+}
+
+.fab{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 0.4rem;
 }
