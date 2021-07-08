@@ -4,12 +4,18 @@ body{
 }
 
 #principal{
-    background-color: #000;
     color: #fff;
+}
+
+.navbar{
+    background-color: #17A3B8;
 }
 
 .navbar-brand{
     vertical-align: middle;
+}
+.nav-link{
+    text-decoration: none;
 }
 
 hr{
