@@ -21,11 +21,10 @@ hr{
     height: 2px;
 }
 
-.fas{
-    display: block;
-    background-color: #17A3B8;
-    text-align: center;
-    padding: 3px;
+.btn {
+    background-color: #17A3B8;  
+    border-radius: 0;
+    color: #fff;
 }
 
 .card-body{
