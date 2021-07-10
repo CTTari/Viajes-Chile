@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,600&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <!-- CDN Bootstrap v4.6. -->    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" alt="logo-viajes" width="32px">
@@ -29,7 +31,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
@@ -47,8 +49,9 @@
 
     <div class="my-5"></div>
 
+    <!-- Carrusel Bootstrap -->
     <div id="carouselExampleControls" class="carousel slide carrusel" data-ride="carousel">
-        <div class="carousel-inner" id="inicio">
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="alpacas">
             </div>
@@ -69,15 +72,17 @@
         </a>
     </div>
 
+    <!-- Sección "quiénes somos", se aplica propiedad para que desaparezca en tamaños pequeños de pantalla -->
     <section id="quienes-somos">
         <div class="container d-none d-lg-block my-5">
-            <h1 class="titulo-principal text-center pt-5">¿Quiénes somos?</h1>
+            <h1 class="titulo-principal text-center">¿Quiénes somos?</h1>
             <hr class="my-5">
             <div class="row">
                 <div class="col-sm-12 col-md-4">
-                    <button type="button" class="btn btn-block" data-toggle="tooltip" data-placement="top" title="Tenemos la mayor oferta de destinos">
+                    <button type="button" class="btn btn-block" data-toggle="tooltip" data-placement="top"
+                        title="Tenemos la mayor oferta de destinos">
                         <i class="fas fa-plane fa-2x"></i>
-                    </button>               
+                    </button>
                     <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mallis ante nula.
                         Donec in
                         neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor
@@ -98,14 +103,16 @@
                         euismod epsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in
                         faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci
                         id neque posuere aliquam.</p>
-                        <button type="button" class="btn btn-block" data-toggle="tooltip" data-placement="bottom" title="Conoce la naturaleza con Viajes Chile">
-                            <i class="fas fa-mountain fa-2x"></i>
-                        </button>
+                    <button type="button" class="btn btn-block" data-toggle="tooltip" data-placement="bottom"
+                        title="Conoce la naturaleza con Viajes Chile">
+                        <i class="fas fa-mountain fa-2x"></i>
+                    </button>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <button type="button" class="btn btn-block" data-toggle="tooltip" data-placement="top" title="Planea tu ruta con nosotros">
+                    <button type="button" class="btn btn-block" data-toggle="tooltip" data-placement="top"
+                        title="Planea tu ruta con nosotros">
                         <i class="fas fa-route fa-2x"></i>
-                    </button>                    
+                    </button>
                     <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mallis ante nula.
                         Donec in
                         neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor
@@ -120,8 +127,9 @@
         </div>
     </section>
 
+    <!-- Sección "destacados", implementa cards de Bootstrap -->
     <section class="container" id="destacados">
-        <h1 class="titulo-destacados text-center mt-5">Destacados</h1>
+        <h1 class="titulo-destacados text-center">Destacados</h1>
         <hr class="mt-5">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
@@ -167,9 +175,10 @@
         </div>
     </section>
 
+    <!-- Sección "contacto", implementa formulario de Typeform -->
     <section id="contacto">
         <div class="container">
-            <h1 class="titulo-destacados text-center mt-5">Contacto</h1>
+            <h1 class="contacto-titulo text-center">Contacto</h1>
             <hr class="mt-5">
             <div class="typeform-widget mb-5"
                 data-url="https://form.typeform.com/to/nKLHxVfs?typeform-medium=embed-snippet"
@@ -181,6 +190,7 @@
         </div>
     </section>
 
+    <!-- Sección "footer", se incluyen íconos de Fontawesome con links a RRSS -->
     <footer class="container.fluid text-white" id="footer">
         <div class="container py-2">
             <div class="row text-center row-footer">
@@ -197,6 +207,7 @@
         </div>
     </footer>
 
+    <!-- Bundle Bootstrap Js v4.6 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
